@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo de navidad para mi lunita</title>
+    <style>
+    body {
+    place-content: center;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+    perspective: 35em;
+    background: #000014;
+    ;
+}
+div{
+    transform-style: preserve-3d;
+    }
+    
+    .a3d{
+        --m: calc(.5*(var(--n-stars)- 1));
+        --t: calc(0.33333*var(--n-stars));
+        animation: roty 12s linear var(--t) infinite reverse;
+}
+        /* Reset general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(145deg, #2a0a33, #66004c);
+            color: white;
+            padding: 20px;
+        }
+
+        header {
+            background: #3c1e3b;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #titulo {
+            font-size: 2.5rem;
+            color: #f4a300;
+            font-weight: bold;
+        }
+
+        .intro {
+            margin: 20px 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        .post {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        .post h2, .post h3 {
+            color: #f4a300;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .post img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        button {
+            background: #f4a300;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: #ffbf3f;
+        }
+
+        footer {
+            background: #3c1e3b;
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #f4a300;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            color: white;
+            font-size: 1rem;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo">Una pequeña página de amor para ti</h1>
+    </header>
+
+    <div class="intro">
+        <p>
+            Hola mi vida, este es un pequeño blog para ti espero que te guste y que lo disfrutes mucho como yo disfrute haciendolo.
+             Lo hice para ti como un regalo de Navidad.
+            Te amo con todo mi corazón, mi alma y mi vida.
+        </p>
+    </div>
+
+    <section>
+        <article class="post">
+            <h2>Carta para ti</h2>
+            <p>
+                Quería empezar esta página con una pequeña carta para ti, mi hermosa Lizzie.
+                Eres la persona más maravillosa que he conocido en mi vida. Cada día a tu lado es un regalo y una bendición.
+                Tu sonrisa ilumina mis días y tu amor llena mi corazón. Eres lo más importante de mi vida.
+                No quiero imaginar mi vida sin ti, quiero que seas mi compañera de vida, mi amor eterno.
+                Te amaré incluso en el abismo más oscuro y frío, más allá de donde se puedan ver las estrellas.
+                y con todo esto quiero desearte una feliz naviad que agradezco con el alma  en pasar nuestras segunda navidad
+                en fin muchas gracias por todo por ser por quien sos, por ser un amor, por ser mi todo.
+            </p>
+            <img src="img/gatito enamorado.gif" alt="Gatito enamorado" width="400">
+        </article>
+
+        <article class="post">
+            <h2>Ahora una sorpresa</h2>
+            <p>Presioná este botón</p>
+            <button type="button" onclick="mostrarSorpresa()">Ver sorpresa</button>
+            <img id="sorpresa" src="img/lizzie.jpg" alt="Lizzie" width="800" style="display:none; margin-top:15px;">
+        </article>
+
+        <article class="post">
+            <h3>espero te guste este tambien</h3>
+            <img src="img/vi.jpg" alt="vi" width="400">
+            <p>te amo mucho</p>
+        </article>
+    </section>
+
+    <footer>
+        <p> siempre estare para ti</p>
+        <img src="img/promesa.jpg" alt="promesa"width="400"
+        
+    </footer>
+
+<script>
+    function mostrarSorpresa() {
+        const img = document.getElementById('sorpresa');
+        if (img.style.display === 'none') {
+            img.style.display = 'block';
+        } else {
+            img.style.display = 'none';
+        }
+    }
+
+</script>
+</body>
+</html>
